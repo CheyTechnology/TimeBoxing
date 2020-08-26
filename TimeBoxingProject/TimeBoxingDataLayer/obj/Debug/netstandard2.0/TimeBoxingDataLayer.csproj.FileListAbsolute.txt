@@ -2,3 +2,8 @@ E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\bin\Debug\
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\bin\Debug\netstandard2.0\TimeBoxingDataLayer.dll
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.AssemblyInfoInputs.cache
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.AssemblyInfo.cs
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\bin\Debug\netstandard2.0\TimeBoxingDataLayer.pdb
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.csprojAssemblyReference.cache
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.csproj.CoreCompileInputs.cache
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.dll
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.pdb

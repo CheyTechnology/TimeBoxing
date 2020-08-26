@@ -6,6 +6,7 @@ public class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"ImageCircle.Forms.Plugin.dll",
 		"MvvmHelpers.dll",
+		"Newtonsoft.Json.dll",
 		"Sharpnado.MaterialFrame.Android.dll",
 		"Sharpnado.MaterialFrame.dll",
 		"Sharpnado.Presentation.Forms.dll",
@@ -57,6 +58,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"TimeBoxingDataLayer.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};
