@@ -1,0 +1,4 @@
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\bin\Debug\netstandard2.0\TimeBoxingClassLibrary.deps.json
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\bin\Debug\netstandard2.0\TimeBoxingClassLibrary.dll
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.AssemblyInfoInputs.cache
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.AssemblyInfo.cs

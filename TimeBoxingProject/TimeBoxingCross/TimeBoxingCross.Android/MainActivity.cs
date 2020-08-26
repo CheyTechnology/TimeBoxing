@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Sharpnado.Presentation.Forms.Droid;
+using System.IO;
 
 namespace TimeBoxingCross.Droid
 {
@@ -23,7 +24,14 @@ namespace TimeBoxingCross.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             SharpnadoInitializer.Initialize();
-            LoadApplication(new App());
+
+            string fileName = "TimeBoxingData.Json";
+            string filePath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string fullPath = Path.Combine(filePath, fileName);
+            if (!File.Exists(fullPath))
+                File.Create(fullPath);
+
+            LoadApplication(new App(fullPath));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

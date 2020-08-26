@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\TimeBoxingDataLayer\TimeBoxingDataLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="HorizontalListView\View\HorizontalListViewContainer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

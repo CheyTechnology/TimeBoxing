@@ -1,0 +1,4 @@
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\bin\Debug\netstandard2.0\TimeBoxingDataLayer.deps.json
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\bin\Debug\netstandard2.0\TimeBoxingDataLayer.dll
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.AssemblyInfoInputs.cache
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingDataLayer\obj\Debug\netstandard2.0\TimeBoxingDataLayer.AssemblyInfo.cs

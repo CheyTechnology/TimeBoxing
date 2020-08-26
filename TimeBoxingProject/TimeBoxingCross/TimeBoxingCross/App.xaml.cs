@@ -13,6 +13,11 @@ namespace TimeBoxingCross
             MainPage = new MainPage();
         }
 
+        public App(string filePath)
+        {
+            FilePath = filePath;
+        }
+
         protected override void OnStart()
         {
         }
@@ -24,5 +29,12 @@ namespace TimeBoxingCross
         protected override void OnResume()
         {
         }
+
+        #region static Properties
+
+        public static string FilePath = string.Empty;
+
+        #endregion 
+
     }
 }

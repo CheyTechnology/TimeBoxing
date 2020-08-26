@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "l7oLRbGpCotk0WYPB/wQIRUWNBRRMBZQBtHmzmBa+ei75FHdn3S7t+L0GhsgdZTl/RKZ52qXSAWV9NSh68/YPw==",
+  "dgSpecHash": "03p8pKG2tnj/mMSolDtwmHa/obNjTN9C7iucm5h1Nvp2xSuf1AN/AXCPC/tOQh9jS75Q3pFPKVaS9waRQ732tQ==",
   "success": true,
   "projectFilePath": "E:\\Users\\mrdav\\Source\\Repos\\TBP\\TimeBoxingProject\\TimeBoxingCross\\TimeBoxingCross\\TimeBoxingCross.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.forms.horizontallistview\\1.7.1\\sharpnado.forms.horizontallistview.1.7.1.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.materialframe\\1.1.1\\sharpnado.materialframe.1.1.1.nupkg.sha512",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GhEGBTrcpQ+/4X7a7Q2nz7MM9TESmGLsP30+LN68nZKj+S0NHtH50wneQakteZTWABBd+qBBGmgo50yeGvaZkA==",
+  "dgSpecHash": "fGOSWOKMapru1OPHSjz7ryNQGeqRpwOpsAVWyvgzJU7Y63Huq8DAv9CGPNdIxTFp43BFThrqcpXPPXCqagDGaQ==",
   "success": true,
   "projectFilePath": "E:\\Users\\mrdav\\Source\\Repos\\TBP\\TimeBoxingProject\\TimeBoxingCross\\TimeBoxingCross.iOS\\TimeBoxingCross.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mrdav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.forms.horizontallistview\\1.7.1\\sharpnado.forms.horizontallistview.1.7.1.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.materialframe\\1.1.1\\sharpnado.materialframe.1.1.1.nupkg.sha512",
