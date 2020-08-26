@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "l7oLRbGpCotk0WYPB/wQIRUWNBRRMBZQBtHmzmBa+ei75FHdn3S7t+L0GhsgdZTl/RKZ52qXSAWV9NSh68/YPw==",
+  "success": true,
+  "projectFilePath": "E:\\Users\\mrdav\\Source\\Repos\\TBP\\TimeBoxingProject\\TimeBoxingCross\\TimeBoxingCross\\TimeBoxingCross.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.forms.horizontallistview\\1.7.1\\sharpnado.forms.horizontallistview.1.7.1.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.materialframe\\1.1.1\\sharpnado.materialframe.1.1.1.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.presentation.forms\\1.7.1\\sharpnado.presentation.forms.1.7.1.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.shadows\\1.1.0\\sharpnado.shadows.1.1.0.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.taskloaderview\\2.0.1\\sharpnado.taskloaderview.2.0.1.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.taskmonitor\\1.0.0\\sharpnado.taskmonitor.1.0.0.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
+  ],
+  "logs": []
+}

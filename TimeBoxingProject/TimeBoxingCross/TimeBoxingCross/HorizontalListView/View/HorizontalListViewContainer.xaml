@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:TimeBoxingCross.HorizontalListView.ViewModel"
+             xmlns:renderedViews="clr-namespace:Sharpnado.Presentation.Forms.RenderedViews;assembly=Sharpnado.Presentation.Forms"
+             xmlns:renderedViews1="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+             x:Class="TimeBoxingCross.HorizontalListView.View.HorizontalListViewContainer">
+    <ContentView.BindingContext>
+        <local:HorizontalListViewContainerViewModel/>
+    </ContentView.BindingContext>
+  <ContentView.Content>
+      <StackLayout>
+            <renderedViews:HorizontalListView CollectionPadding="8" HorizontalOptions="FillAndExpand"
+                                  ItemSpacing="8" Background="#2196F3" HeightRequest="400"
+                                  EnableDragAndDrop="True"
+                                  ColumnCount="1"
+                                  ItemHeight="120"
+                                  ItemsSource="{Binding TaskCollection}"
+                                  ListLayout="Grid">
+                <renderedViews:HorizontalListView.ItemTemplate>
+                    <DataTemplate>
+                        <renderedViews:DraggableViewCell x:Name="DraggableViewCell">
+                            <ContentView>
+                                <renderedViews1:MaterialFrame Margin="4"
+                                                 Padding="4"
+                                                 Elevation="4">
+
+                                    <Frame.Triggers>
+                                        <DataTrigger Binding="{Binding Source={x:Reference DraggableViewCell}, Path=IsDragAndDropping}"
+                                         TargetType="renderedViews1:MaterialFrame"
+                                         Value="True">
+                                            <Setter Property="Elevation" Value="8" />
+                                        </DataTrigger>
+                                    </Frame.Triggers>
+
+                                    <Grid ColumnSpacing="0" RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <!--<abstractions:CircleImage Grid.Row="0"
+                                                      Style="{StaticResource SmallAvatar}"
+                                                      Aspect="AspectFill"
+                                                      Source="{Binding ImageUrl}" />-->
+                                        <Label Grid.Row="1"
+                                   Margin="4"
+                               
+                                   HorizontalTextAlignment="Center"
+                                   Text="{Binding Name}" />
+                                    </Grid>
+                                </renderedViews1:MaterialFrame>
+                            </ContentView>
+                        </renderedViews:DraggableViewCell>
+                    </DataTemplate>
+                </renderedViews:HorizontalListView.ItemTemplate>
+            </renderedViews:HorizontalListView>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
