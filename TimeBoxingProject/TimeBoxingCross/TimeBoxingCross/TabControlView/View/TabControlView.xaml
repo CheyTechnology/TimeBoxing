@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TimeBoxingCross.TabControlView.ViewModel"
+             xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
+             x:Class="TimeBoxingCross.TabControlView.View.TabControlView">
+    <ContentView.BindingContext>
+        <local:TabControlViewModel/>
+    </ContentView.BindingContext>
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TabStyle" TargetType="tabs:UnderlinedTabItem">
+                <Setter Property="SelectedTabColor" Value="LightBlue" />
+                <Setter Property="LabelSize" Value="50" />
+                <Setter Property="UnselectedLabelColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <Grid Padding="4"
+      ColumnSpacing="0"
+      RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+        
+
+            <tabs:TabHostView x:Name="TabHost"
+                      Grid.Row="0" TabType="Scrollable"
+                      Margin="-16,0"
+                      BackgroundColor="#272727"
+                      SelectedIndex="{Binding Source={x:Reference Switcher}, Path=SelectedIndex, Mode=TwoWay}">
+                <tabs:TabHostView.Tabs>
+                    <tabs:UnderlinedTabItem Style="{StaticResource TabStyle}" Label="test0" WidthRequest="90"/>
+                    <tabs:UnderlinedTabItem Style="{StaticResource TabStyle}" Label="test1" WidthRequest="90"/>
+                    <tabs:UnderlinedTabItem Style="{StaticResource TabStyle}" Label="test2" WidthRequest="90"/>
+                    <tabs:UnderlinedTabItem Style="{StaticResource TabStyle}" Label="test3" WidthRequest="90"/>
+                    <tabs:UnderlinedTabItem Style="{StaticResource TabStyle}" Label="test4" WidthRequest="90"/>
+                    <tabs:UnderlinedTabItem Style="{StaticResource TabStyle}" Label="test5" WidthRequest="90"/>
+                </tabs:TabHostView.Tabs>
+            </tabs:TabHostView>
+
+            <ScrollView Grid.Row="1">
+                <tabs:ViewSwitcher x:Name="Switcher"
+                           Animate="True"
+                           SelectedIndex="{Binding SelectedViewModelIndex, Mode=TwoWay}">
+                    <!--<details:Quote Animate="True" BindingContext="{Binding Quote}" />
+                    <details:Filmo Animate="True" BindingContext="{Binding Filmo}" />
+                    <details:Meme Animate="True" BindingContext="{Binding Meme}" />-->
+                </tabs:ViewSwitcher>
+            </ScrollView>
+        </Grid>
+    </ContentView.Content>
+    
+    
+    
+    
+</ContentView>

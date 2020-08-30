@@ -17,8 +17,8 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
 
         public HorizontalListViewContainerViewModel()
         {
-            HandleStaticInstances();
-            GetTaskCollection();
+            //HandleStaticInstances();
+            //GetTaskCollection();
 
             TaskCollection = new ObservableCollection<SingleTask>() { new SingleTask() { Name = "Tst" }, new SingleTask() { Name = "Tst2" }, new SingleTask() { Name = "Tst3" }, new SingleTask() { Name = "Tst4" }, new SingleTask() { Name = "Tst5" } };
         }

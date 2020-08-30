@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:horizontallistview="clr-namespace:TimeBoxingCross.HorizontalListView.View"
+             xmlns:Tab="clr-namespace:TimeBoxingCross.TabControlView.View"
              x:Class="TimeBoxingCross.MainPage">
 
     <StackLayout>
@@ -10,6 +11,7 @@
         </Frame>
         <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>-->
+        <Tab:TabControlView/>
         <horizontallistview:HorizontalListViewContainer VerticalOptions="FillAndExpand"/>
 
     </StackLayout>

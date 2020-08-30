@@ -15,6 +15,9 @@ namespace TimeBoxingCross
 
         public App(string filePath)
         {
+            InitializeComponent();
+
+            MainPage = new MainPage();
             FilePath = filePath;
         }
 

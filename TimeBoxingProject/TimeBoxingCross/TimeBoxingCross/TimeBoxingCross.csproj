@@ -27,5 +27,12 @@
     <EmbeddedResource Update="HorizontalListView\View\HorizontalListViewContainer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="TabControlView\View\TabControlView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TabControlView\Model\" />
   </ItemGroup>
 </Project>
