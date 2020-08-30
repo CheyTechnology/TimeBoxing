@@ -9,9 +9,8 @@
         <local:HorizontalListViewContainerViewModel/>
     </ContentView.BindingContext>
   <ContentView.Content>
-      <StackLayout>
             <renderedViews:HorizontalListView CollectionPadding="8" HorizontalOptions="FillAndExpand"
-                                  ItemSpacing="8" Background="#2196F3" HeightRequest="400"
+                                  ItemSpacing="8" Background="#2196F3" 
                                   EnableDragAndDrop="True"
                                   ColumnCount="1"
                                   ItemHeight="120"
@@ -54,6 +53,6 @@
                     </DataTemplate>
                 </renderedViews:HorizontalListView.ItemTemplate>
             </renderedViews:HorizontalListView>
-        </StackLayout>
+     
   </ContentView.Content>
 </ContentView>

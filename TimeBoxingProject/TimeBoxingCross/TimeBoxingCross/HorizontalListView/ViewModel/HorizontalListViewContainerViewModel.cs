@@ -29,6 +29,7 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
 
         #region properties
 
+        
         private IList<SingleTask> _taskCollection;
         public IList<SingleTask> TaskCollection
         {

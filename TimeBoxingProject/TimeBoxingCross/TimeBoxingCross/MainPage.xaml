@@ -2,18 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:horizontallistview="clr-namespace:TimeBoxingCross.HorizontalListView.View"
-             xmlns:Tab="clr-namespace:TimeBoxingCross.TabControlView.View"
+             xmlns:Tab="clr-namespace:TimeBoxingCross.TabControlView.View" 
+             xmlns:local="clr-namespace:TimeBoxingCross"
              x:Class="TimeBoxingCross.MainPage">
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Timeboxing" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Frame BackgroundColor="White" Padding="24" CornerRadius="0" Grid.Row="0">
+            <Label Text="Timeboxing" HorizontalTextAlignment="Center" TextColor="LightBlue" FontSize="36"/>
         </Frame>
         <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>-->
-        <Tab:TabControlView/>
-        <horizontallistview:HorizontalListViewContainer VerticalOptions="FillAndExpand"/>
 
-    </StackLayout>
+        <horizontallistview:HorizontalListViewContainer VerticalOptions="FillAndExpand" Grid.Row="1" />
+        <Tab:TabControlView Grid.Row="2"/>
+
+    </Grid>
 
 </ContentPage>
