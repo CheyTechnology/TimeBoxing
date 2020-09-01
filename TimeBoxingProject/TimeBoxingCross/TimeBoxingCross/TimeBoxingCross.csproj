@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\symbol.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
     <PackageReference Include="Sharpnado.Forms.HorizontalListView" Version="1.7.1" />
     <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.7.1" />
@@ -20,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\TimeBoxingClassLibrary\TimeBoxingClassLibrary.csproj" />
     <ProjectReference Include="..\..\TimeBoxingDataLayer\TimeBoxingDataLayer.csproj" />
   </ItemGroup>
 
@@ -34,5 +39,9 @@
 
   <ItemGroup>
     <Folder Include="TabControlView\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\symbol.png" />
   </ItemGroup>
 </Project>

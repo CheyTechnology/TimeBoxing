@@ -261,6 +261,16 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "TimeBoxingClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        }
+      },
       "TimeBoxingCross/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -268,6 +278,7 @@
           "Refractored.MvvmHelpers": "1.6.2",
           "Sharpnado.Forms.HorizontalListView": "1.7.1",
           "Sharpnado.Presentation.Forms": "1.7.1",
+          "TimeBoxingClassLibrary": "1.0.0",
           "TimeBoxingDataLayer": "1.0.0",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.5.3.2",
@@ -554,6 +565,16 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "TimeBoxingClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        }
+      },
       "TimeBoxingCross/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -561,6 +582,7 @@
           "Refractored.MvvmHelpers": "1.6.2",
           "Sharpnado.Forms.HorizontalListView": "1.7.1",
           "Sharpnado.Presentation.Forms": "1.7.1",
+          "TimeBoxingClassLibrary": "1.0.0",
           "TimeBoxingDataLayer": "1.0.0",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.5.3.2",
@@ -847,6 +869,16 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "TimeBoxingClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        }
+      },
       "TimeBoxingCross/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -854,6 +886,7 @@
           "Refractored.MvvmHelpers": "1.6.2",
           "Sharpnado.Forms.HorizontalListView": "1.7.1",
           "Sharpnado.Presentation.Forms": "1.7.1",
+          "TimeBoxingClassLibrary": "1.0.0",
           "TimeBoxingDataLayer": "1.0.0",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.5.3.2",
@@ -1140,6 +1173,16 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "TimeBoxingClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TimeBoxingClassLibrary.dll": {}
+        }
+      },
       "TimeBoxingCross/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1147,6 +1190,7 @@
           "Refractored.MvvmHelpers": "1.6.2",
           "Sharpnado.Forms.HorizontalListView": "1.7.1",
           "Sharpnado.Presentation.Forms": "1.7.1",
+          "TimeBoxingClassLibrary": "1.0.0",
           "TimeBoxingDataLayer": "1.0.0",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.5.3.2",
@@ -1794,6 +1838,11 @@
         "xamarin.forms.4.8.0.1269.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "TimeBoxingClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../../TimeBoxingClassLibrary/TimeBoxingClassLibrary.csproj",
+      "msbuildProject": "../../TimeBoxingClassLibrary/TimeBoxingClassLibrary.csproj"
     },
     "TimeBoxingCross/1.0.0": {
       "type": "project",

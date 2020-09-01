@@ -32,3 +32,5 @@ E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingCross\TimeBoxingCros
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingCross\TimeBoxingCross\obj\Debug\netstandard2.0\ref\TimeBoxingCross.dll
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingCross\TimeBoxingCross\obj\Debug\netstandard2.0\TimeBoxingCross.pdb
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingCross\TimeBoxingCross\obj\Debug\netstandard2.0\TabControlView\View\TabControlView.xaml.g.cs
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingCross\TimeBoxingCross\bin\Debug\netstandard2.0\TimeBoxingClassLibrary.dll
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingCross\TimeBoxingCross\bin\Debug\netstandard2.0\TimeBoxingClassLibrary.pdb

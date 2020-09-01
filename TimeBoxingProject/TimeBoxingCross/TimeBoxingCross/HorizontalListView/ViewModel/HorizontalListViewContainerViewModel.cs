@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using TimeBoxingCross.Core;
 using TimeBoxingCross.HorizontalListView.Model;
 using TimeBoxingDataLayer;
 
@@ -19,6 +20,14 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
         {
             //HandleStaticInstances();
             //GetTaskCollection();
+
+            Mediator.Instance.Register(
+                (Object o) =>
+                {
+                    if (TaskCollection == null)
+                        TaskCollection = new ObservableCollection<SingleTask>();
+                    TaskCollection.Add(o as SingleTask);
+                }, ViewModelMessages.AddNewTask);
 
             TaskCollection = new ObservableCollection<SingleTask>() { new SingleTask() { Name = "Tst" }, new SingleTask() { Name = "Tst2" }, new SingleTask() { Name = "Tst3" }, new SingleTask() { Name = "Tst4" }, new SingleTask() { Name = "Tst5" } };
         }

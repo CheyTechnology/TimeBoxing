@@ -13,7 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
         <Frame BackgroundColor="White" Padding="24" CornerRadius="0" Grid.Row="0">
             <Label Text="Timeboxing" HorizontalTextAlignment="Center" TextColor="LightBlue" FontSize="36"/>

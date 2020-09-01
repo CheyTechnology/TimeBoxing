@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using TimeBoxingCross.Core;
+using TimeBoxingCross.HorizontalListView.Model;
 using Xamarin.Forms;
 
 namespace TimeBoxingCross.TabControlView.ViewModel
@@ -30,7 +31,8 @@ namespace TimeBoxingCross.TabControlView.ViewModel
 
         private void NewTask(object obj)
         {
-            throw new NotImplementedException();
+            SingleTask task = new SingleTask();
+            Mediator.Instance.NotifyColleagues(ViewModelMessages.AddNewTask, task);
         }
 
         #endregion
@@ -38,7 +40,7 @@ namespace TimeBoxingCross.TabControlView.ViewModel
 
         #region properites
 
-        public int SelectedViewModelIndex { get; set; }
+        public int SelectedIndex { get; set; }
 
         #endregion
 
