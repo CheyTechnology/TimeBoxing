@@ -3,26 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:horizontallistview="clr-namespace:TimeBoxingCross.HorizontalListView.View"
              xmlns:Tab="clr-namespace:TimeBoxingCross.TabControlView.View" 
-             xmlns:local="clr-namespace:TimeBoxingCross"
+             xmlns:local="clr-namespace:TimeBoxingCross" BackgroundColor="LightBlue" 
              x:Class="TimeBoxingCross.MainPage">
     <ContentPage.BindingContext>
         <local:MainPageViewModel/>
     </ContentPage.BindingContext>
 
-    <Grid>
+    <Grid BackgroundColor="LightBlue" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="60*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
-        <Frame BackgroundColor="White" Padding="24" CornerRadius="0" Grid.Row="0">
-            <Label Text="Timeboxing" HorizontalTextAlignment="Center" TextColor="LightBlue" FontSize="36"/>
-        </Frame>
+            <Grid Padding="10,10,10,10" Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Text="TODAY" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Grid.Row="0"/>
+                <Label Text="09/03/20" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" Grid.Row="1"/>
+            </Grid>
+        
+            <Label Text="Timeboxing" HorizontalTextAlignment="Center" TextColor="LightBlue" FontSize="36" Grid.Row="0" Grid.Column="1"/>
+        
         <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>-->
 
-        <horizontallistview:HorizontalListViewContainer VerticalOptions="FillAndExpand" Grid.Row="1" />
-        <Tab:TabControlView Grid.Row="2"/>
+        <!--<horizontallistview:HorizontalListViewContainer VerticalOptions="FillAndExpand" Grid.Row="1" />-->
+        <Tab:TabControlView Grid.Row="1" Grid.ColumnSpan="2"/>
 
     </Grid>
 

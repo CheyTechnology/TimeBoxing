@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TimeBoxingCross.TabControlView.ViewModel"
              xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
-             xmlns:res="clr-namespace:TimeBoxingCross"
+             xmlns:res="clr-namespace:TimeBoxingCross.HorizontalListView.View"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
              x:Class="TimeBoxingCross.TabControlView.View.TabControlView">
     <ContentView.BindingContext>
         <local:TabControlViewModel/>
@@ -11,16 +12,16 @@
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="TabStyle" TargetType="tabs:BottomTabItem">
-                <Setter Property="SelectedTabColor" Value="Black" />
+                <Setter Property="SelectedTabColor" Value="Black" />                
                 <Setter Property="LabelSize" Value="50" />
-                <Setter Property="UnselectedLabelColor" Value="White" />
+                <Setter Property="UnselectedLabelColor" Value="DarkGray" />
             </Style>
             
         </ResourceDictionary>
     </ContentView.Resources>
 
     <ContentView.Content>
-        <Grid Padding="4"
+        <Grid Padding="4" BackgroundColor="AliceBlue"
       ColumnSpacing="0"
       RowSpacing="0">
             <Grid.RowDefinitions>
@@ -28,24 +29,34 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
+            <ScrollView Grid.Row="0">
+                <tabs:ViewSwitcher x:Name="Switcher"
+                           Animate="True"
+                           SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}">                   
+                    <res:HorizontalListViewContainer/>
+                </tabs:ViewSwitcher>
+            </ScrollView>
 
 
             <tabs:TabHostView x:Name="TabHost"
-                      Grid.Row="0" 
-                      Margin="-16,0"
-                      BackgroundColor="White"
-                              SelectedIndex="{Binding SelectedIndex}">
+                              Grid.Row="1"
+                              Margin="-16,0"
+                              BackgroundColor="AliceBlue"
+                              IsSegmented="True"
+                              SelectedIndex="{Binding Source={x:Reference Switcher}, Path=SelectedIndex, Mode=TwoWay}">
             <tabs:TabHostView.Tabs>
                     <tabs:BottomTabItem Style="{StaticResource TabStyle}" Label="test0" >
-                    
+                        
                     </tabs:BottomTabItem>
                     <tabs:BottomTabItem Style="{StaticResource TabStyle}" Label="test1" />
-                    <tabs:TabButton 
-                                    TapCommand="{Binding NewTaskCommand}"
-                                    Padding="5"
-                                    ButtonBackgroundColor="Accent"
-                                    ButtonPadding="10"
-                                    CornerRadius="5" />
+                    <tabs:TabButton TapCommand="{Binding NewTaskCommand}"
+                                Padding="5"
+                                ButtonBackgroundColor="LightBlue"
+                                ButtonPadding="10"
+                                CornerRadius="5" >
+                        
+                    </tabs:TabButton>
+
                     <tabs:BottomTabItem Style="{StaticResource TabStyle}" Label="test3" />
                     <tabs:BottomTabItem Style="{StaticResource TabStyle}" Label="test4" />
                 </tabs:TabHostView.Tabs>

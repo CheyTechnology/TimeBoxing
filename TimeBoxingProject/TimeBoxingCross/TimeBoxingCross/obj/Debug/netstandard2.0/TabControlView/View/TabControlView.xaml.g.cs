@@ -17,11 +17,15 @@ namespace TimeBoxingCross.TabControlView.View {
     public partial class TabControlView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Sharpnado.Presentation.Forms.CustomViews.Tabs.ViewSwitcher Switcher;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Sharpnado.Presentation.Forms.CustomViews.Tabs.TabHostView TabHost;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TabControlView));
+            Switcher = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Sharpnado.Presentation.Forms.CustomViews.Tabs.ViewSwitcher>(this, "Switcher");
             TabHost = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Sharpnado.Presentation.Forms.CustomViews.Tabs.TabHostView>(this, "TabHost");
         }
     }
