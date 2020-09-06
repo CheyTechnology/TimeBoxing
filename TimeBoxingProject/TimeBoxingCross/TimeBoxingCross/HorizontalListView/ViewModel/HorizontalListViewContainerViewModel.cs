@@ -24,9 +24,7 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
             Mediator.Instance.Register(
                 (Object o) =>
                 {
-                    if (TaskCollection == null)
-                        TaskCollection = new ObservableCollection<SingleTask>();
-                    TaskCollection.Add(o as SingleTask);
+                    AddTask(o as SingleTask);
                 }, ViewModelMessages.AddNewTask);
 
             TaskCollection = new ObservableCollection<SingleTask>() { new SingleTask() { Name = "Tst" }, new SingleTask() { Name = "Tst2" }, new SingleTask() { Name = "Tst3" }, new SingleTask() { Name = "Tst4" }, new SingleTask() { Name = "Tst5" } };
@@ -49,6 +47,48 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
                 {
                     _taskCollection = value;
                     OnPropertyChanged(nameof(TaskCollection));
+                }
+            }
+        }
+
+        //private IList<SingleTask> _favTaskCollection;
+        //public IList<SingleTask> FavTaskCollection
+        //{
+        //    get { return _favTaskCollection; }
+        //    set
+        //    {
+        //        if (_favTaskCollection != value)
+        //        {
+        //            _favTaskCollection = value;
+        //            OnPropertyChanged(nameof(FavTaskCollection));
+        //        }
+        //    }
+        //}
+
+        //private IList<SingleTask> _tomorrowTaskCollection;
+        //public IList<SingleTask> TomorrowTaskCollection
+        //{
+        //    get { return _tomorrowTaskCollection; }
+        //    set
+        //    {
+        //        if (_tomorrowTaskCollection != value)
+        //        {
+        //            _tomorrowTaskCollection = value;
+        //            OnPropertyChanged(nameof(TomorrowTaskCollection));
+        //        }
+        //    }
+        //}
+
+        private string _day;
+        public string Day
+        {
+            get { return _day; }
+            set
+            {
+                if (_day != value)
+                {
+                    _day = value;
+                    OnPropertyChanged(nameof(Day));
                 }
             }
         }
@@ -86,6 +126,30 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
 
         #region methods
 
+
+        public void AddTask(SingleTask task)
+        {
+            if (task != null)
+            {
+                if (TaskCollection == null)
+                    TaskCollection = new ObservableCollection<SingleTask>();
+                task.SortOrder = TaskCollection.Count;
+                task.Name = "New Task " + task.SortOrder;
+                TaskCollection.Add(task);
+            }
+        }
+
+        public void RemoveTask(object task)
+        {
+            if(task != null && task is SingleTask singleTask)
+            {
+                if(TaskCollection != null && TaskCollection.Contains(singleTask))
+                {
+                    TaskCollection.Remove(singleTask);
+                }
+            }
+        }
+
         public void GetTaskCollection()
         {
             try
@@ -113,6 +177,19 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
         #endregion
 
         #region commands
+
+        private DelegateCommand _removeTaskCommand;
+
+        public DelegateCommand RemoveTaskCommand
+        {
+            get
+            {
+                if (_removeTaskCommand == null)
+                    _removeTaskCommand = new DelegateCommand( (parameter) => { RemoveTask(parameter); });
+                return _removeTaskCommand;
+            }
+        }
+
         #endregion
 
     }

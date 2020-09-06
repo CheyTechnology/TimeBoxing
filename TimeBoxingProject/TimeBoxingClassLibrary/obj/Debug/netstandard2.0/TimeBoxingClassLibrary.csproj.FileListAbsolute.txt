@@ -3,8 +3,7 @@ E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\bin\Deb
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.AssemblyInfoInputs.cache
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.AssemblyInfo.cs
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\bin\Debug\netstandard2.0\TimeBoxingClassLibrary.pdb
-E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.Resource.resources
-E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.csproj.GenerateResource.cache
-E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.csproj.CoreCompileInputs.cache
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.dll
 E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.pdb
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.csproj.CoreCompileInputs.cache
+E:\Users\mrdav\Source\Repos\TBP\TimeBoxingProject\TimeBoxingClassLibrary\obj\Debug\netstandard2.0\TimeBoxingClassLibrary.csprojAssemblyReference.cache

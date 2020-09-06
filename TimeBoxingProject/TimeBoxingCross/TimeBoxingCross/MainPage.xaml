@@ -24,15 +24,15 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Label Text="TODAY" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Grid.Row="0"/>
-                <Label Text="09/03/20" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" Grid.Row="1"/>
+                <Label Text="{Binding DateToday}" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" Grid.Row="1"/>
             </Grid>
         
-            <Label Text="Timeboxing" HorizontalTextAlignment="Center" TextColor="LightBlue" FontSize="36" Grid.Row="0" Grid.Column="1"/>
+          
+        <!--<Label Text="&#xe801;"
+                 FontSize="44" Grid.Row="0" Grid.Column="1"
+                 FontFamily="{OnPlatform Android=home.ttf#fontello}"
+                 TextColor="Orange"/>-->
         
-        <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>-->
-
-        <!--<horizontallistview:HorizontalListViewContainer VerticalOptions="FillAndExpand" Grid.Row="1" />-->
         <Tab:TabControlView Grid.Row="1" Grid.ColumnSpan="2"/>
 
     </Grid>

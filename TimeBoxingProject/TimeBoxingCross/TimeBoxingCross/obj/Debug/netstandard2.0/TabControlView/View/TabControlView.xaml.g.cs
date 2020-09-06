@@ -23,10 +23,14 @@ namespace TimeBoxingCross.TabControlView.View {
         private global::Sharpnado.Presentation.Forms.CustomViews.Tabs.TabHostView TabHost;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Sharpnado.Presentation.Forms.CustomViews.Tabs.BottomTabItem HomeButton;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TabControlView));
             Switcher = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Sharpnado.Presentation.Forms.CustomViews.Tabs.ViewSwitcher>(this, "Switcher");
             TabHost = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Sharpnado.Presentation.Forms.CustomViews.Tabs.TabHostView>(this, "TabHost");
+            HomeButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Sharpnado.Presentation.Forms.CustomViews.Tabs.BottomTabItem>(this, "HomeButton");
         }
     }
 }

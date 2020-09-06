@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TimeBoxingCross.App">
     <Application.Resources>
-
+        <Style x:Key="LabelTabButtonStyle" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontFamily" Value="{OnPlatform Android=home.ttf#fontello}" />
+            <Setter Property="TextColor" Value="DarkGray"/>
+            <Setter Property="Margin" Value="0,6,0,0"/>
+        </Style>
     </Application.Resources>
 </Application>

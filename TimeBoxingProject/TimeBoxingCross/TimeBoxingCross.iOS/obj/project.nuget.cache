@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dHI27cFOKUz0/h3urYB6KbJVHYtsqnledyD13bGTiFKSlE40mRmxZeXb7x2Rxgqzfw4qp16ixe0uWQPvaAlMDA==",
+  "dgSpecHash": "uvP78iutHUQ9iGhfHcfernKWFPB5wiGdrQZ+G5pghUdtmKWp+Klg/qgOXfXqAJ/lOSQxb0nQEhudBZCvxMkt2A==",
   "success": true,
   "projectFilePath": "E:\\Users\\mrdav\\Source\\Repos\\TBP\\TimeBoxingProject\\TimeBoxingCross\\TimeBoxingCross.iOS\\TimeBoxingCross.iOS.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.shadows\\1.1.0\\sharpnado.shadows.1.1.0.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.taskloaderview\\2.0.1\\sharpnado.taskloaderview.2.0.1.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\sharpnado.taskmonitor\\1.0.0\\sharpnado.taskmonitor.1.0.0.nupkg.sha512",
+    "C:\\Users\\mrdav\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\mrdav\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
     "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",

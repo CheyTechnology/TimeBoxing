@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" x:Name="CV"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:TimeBoxingCross.HorizontalListView.ViewModel"
              xmlns:renderedViews="clr-namespace:Sharpnado.Presentation.Forms.RenderedViews;assembly=Sharpnado.Presentation.Forms"
@@ -9,6 +9,15 @@
     <ContentView.BindingContext>
         <local:HorizontalListViewContainerViewModel/>
     </ContentView.BindingContext>
+    <ContentView.Resources>
+        <Style TargetType="Button" x:Key="ButtonMaterialFrame">
+            <Style.Triggers>
+                <DataTrigger TargetType="Button" Binding="{Binding Source={x:RelativeSource AncestorType={x:Type renderedViews:DraggableViewCell}}, Path=IsDragAndDropping}" Value="true">
+                    <Setter Property="TextColor" Value="LightGray"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentView.Resources>
   <ContentView.Content>
             <renderedViews:HorizontalListView CollectionPadding="8" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"
                                               ItemSpacing="8" BackgroundColor="LightBlue" 
@@ -30,7 +39,6 @@
                                                               Padding="0"
                                                               Elevation="0"
                                                               >
-
                                     <Frame.Triggers>
                                         <DataTrigger Binding="{Binding Source={x:Reference DraggableViewCell}, Path=IsDragAndDropping}"
                                                      TargetType="renderedViews1:MaterialFrame"
@@ -43,13 +51,30 @@
                                           RowSpacing="0"
                                           BackgroundColor="White">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="*" />
                                             <RowDefinition Height="*" />
                                         </Grid.RowDefinitions>
-                                        <!--<abstractions:CircleImage Grid.Row="0"
-                                                      Style="{StaticResource SmallAvatar}"
-                                                      Aspect="AspectFill"
-                                                      Source="{Binding ImageUrl}" />-->
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Button Grid.Column="2" 
+                                                Grid.Row="0"
+                                                Text="&#xe807;" 
+                                                Margin="10,0,0,10"
+                                                WidthRequest="50"
+                                                HeightRequest="50"
+                                                HorizontalOptions="End"
+                                                FontSize="24"               
+                                                FontFamily="{OnPlatform Android=home.ttf#fontello}"
+                                                TextColor="DarkGray"
+                                                BackgroundColor="Transparent"
+                                                Style="{StaticResource ButtonMaterialFrame}"
+                                                Command="{Binding Source={x:Reference CV}, Path=BindingContext.RemoveTaskCommand}"
+                                                CommandParameter="{Binding .}">                                   
+                                        </Button>
+
                                         <Label Grid.Row="1"
                                                Margin="4" BackgroundColor="White"
                                                HorizontalTextAlignment="Center"
