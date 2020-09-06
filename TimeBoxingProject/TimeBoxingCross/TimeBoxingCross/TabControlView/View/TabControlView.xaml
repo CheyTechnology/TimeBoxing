@@ -65,7 +65,7 @@
                     </tabs:BottomTabItem>
                     <tabs:TabButton TapCommand="{Binding NewTaskCommand}"
                                 Padding="5"
-                                ButtonBackgroundColor="LightBlue"
+                                ButtonBackgroundColor="{StaticResource ThemeColor}"
                                 ButtonPadding="10"
                                 CornerRadius="5" >                     
                     </tabs:TabButton>

@@ -4,13 +4,16 @@
              xmlns:local="clr-namespace:TimeBoxingCross.HorizontalListView.ViewModel"
              xmlns:renderedViews="clr-namespace:Sharpnado.Presentation.Forms.RenderedViews;assembly=Sharpnado.Presentation.Forms"
              xmlns:renderedViews1="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame" 
-             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows" BackgroundColor="LightBlue"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows" BackgroundColor="{StaticResource ThemeColor}"
              x:Class="TimeBoxingCross.HorizontalListView.View.HorizontalListViewContainer">
     <ContentView.BindingContext>
         <local:HorizontalListViewContainerViewModel/>
     </ContentView.BindingContext>
     <ContentView.Resources>
         <Style TargetType="Button" x:Key="ButtonMaterialFrame">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="FontFamily" Value="{OnPlatform Android=home.ttf#fontello}"/>
+            <Setter Property="TextColor" Value="DarkGray"/>
             <Style.Triggers>
                 <DataTrigger TargetType="Button" Binding="{Binding Source={x:RelativeSource AncestorType={x:Type renderedViews:DraggableViewCell}}, Path=IsDragAndDropping}" Value="true">
                     <Setter Property="TextColor" Value="LightGray"/>
@@ -20,7 +23,7 @@
     </ContentView.Resources>
   <ContentView.Content>
             <renderedViews:HorizontalListView CollectionPadding="8" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"
-                                              ItemSpacing="8" BackgroundColor="LightBlue" 
+                                              ItemSpacing="8" BackgroundColor="{StaticResource ThemeColor}" 
                                               EnableDragAndDrop="True"
                                               ColumnCount="1"
                                               ItemHeight="120"
@@ -57,27 +60,70 @@
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition/>
                                             <ColumnDefinition/>
-                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="60"/>
                                         </Grid.ColumnDefinitions>
+
+                                        <Label Text="01h 35m"
+                                               HorizontalTextAlignment="Center" 
+                                               TextColor="{StaticResource ThemeColor}"
+                                               FontSize="22" 
+                                               Margin="0,10,80,0"
+                                               Grid.Row="0"
+                                               Grid.Column="0"
+                                               Grid.ColumnSpan="2"/>
+
+                                        <Button Grid.Column="1" 
+                                                Grid.Row="0"  
+                                                Margin="0,0,-15,13" 
+                                                WidthRequest="46"
+                                                HeightRequest="50"
+                                                HorizontalOptions="End"
+                                                FontSize="24"               
+                                                Command="{Binding Source={x:Reference CV}, Path=BindingContext.MarkTaskFavCommand}"
+                                                CommandParameter="{Binding .}">
+                                            <Button.Style>
+                                                <Style TargetType="Button"  BasedOn="{StaticResource ButtonMaterialFrame}">
+                                                    <Setter Property="Text" Value="&#xe806;"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger TargetType="Button" Binding="{Binding IsFav}" Value="True">
+                                                            <Setter Property="Text" Value="&#xe805;"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
                                         <Button Grid.Column="2" 
                                                 Grid.Row="0"
                                                 Text="&#xe807;" 
                                                 Margin="10,0,0,10"
-                                                WidthRequest="50"
+                                                WidthRequest="46"
                                                 HeightRequest="50"
-                                                HorizontalOptions="End"
+                                                HorizontalOptions="End" 
                                                 FontSize="24"               
-                                                FontFamily="{OnPlatform Android=home.ttf#fontello}"
-                                                TextColor="DarkGray"
-                                                BackgroundColor="Transparent"
                                                 Style="{StaticResource ButtonMaterialFrame}"
                                                 Command="{Binding Source={x:Reference CV}, Path=BindingContext.RemoveTaskCommand}"
-                                                CommandParameter="{Binding .}">                                   
+                                                CommandParameter="{Binding .}">
                                         </Button>
-
+                                        <Button Grid.Column="0" 
+                                                Grid.Row="0"
+                                                Text="&#xe808;" 
+                                                Margin="10,0,10,5"
+                                                WidthRequest="46"
+                                                HeightRequest="50"
+                                                HorizontalOptions="Start"
+                                                FontSize="28"               
+                                                Style="{StaticResource ButtonMaterialFrame}"
+                                                Command="{Binding Source={x:Reference CV}, Path=BindingContext.RemoveTaskCommand}"
+                                                CommandParameter="{Binding .}">
+                                        </Button>
                                         <Label Grid.Row="1"
-                                               Margin="4" BackgroundColor="White"
-                                               HorizontalTextAlignment="Center"
+                                               Grid.Column="0"
+                                               Grid.ColumnSpan="3"
+                                               Margin="20,5,0,0"
+                                               BackgroundColor="White"
+                                               FontSize="28"
+                                               TextColor="{StaticResource ThemeColor}"
+                                               HorizontalTextAlignment="Start"
                                                Text="{Binding Name}" />
                                     </Grid>
                                 </renderedViews1:MaterialFrame>

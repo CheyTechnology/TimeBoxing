@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:horizontallistview="clr-namespace:TimeBoxingCross.HorizontalListView.View"
              xmlns:Tab="clr-namespace:TimeBoxingCross.TabControlView.View" 
-             xmlns:local="clr-namespace:TimeBoxingCross" BackgroundColor="LightBlue" 
+             xmlns:local="clr-namespace:TimeBoxingCross" BackgroundColor="{StaticResource ThemeColor}" 
              x:Class="TimeBoxingCross.MainPage">
     <ContentPage.BindingContext>
         <local:MainPageViewModel/>
     </ContentPage.BindingContext>
 
-    <Grid BackgroundColor="LightBlue" >
+    <Grid BackgroundColor="{StaticResource ThemeColor}" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="60*"/>

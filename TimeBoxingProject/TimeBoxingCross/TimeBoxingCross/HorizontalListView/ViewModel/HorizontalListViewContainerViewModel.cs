@@ -27,7 +27,7 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
                     AddTask(o as SingleTask);
                 }, ViewModelMessages.AddNewTask);
 
-            TaskCollection = new ObservableCollection<SingleTask>() { new SingleTask() { Name = "Tst" }, new SingleTask() { Name = "Tst2" }, new SingleTask() { Name = "Tst3" }, new SingleTask() { Name = "Tst4" }, new SingleTask() { Name = "Tst5" } };
+            TaskCollection = new ObservableCollection<SingleTask>() { new SingleTask() { Name = "Project Appdesign"}, new SingleTask() { Name = "Workout" }, new SingleTask() { Name = "Something else" }, new SingleTask() { Name = "Dinner" }, new SingleTask() { Name = "Videoediting" } };
         }
 
         #endregion 
@@ -50,34 +50,6 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
                 }
             }
         }
-
-        //private IList<SingleTask> _favTaskCollection;
-        //public IList<SingleTask> FavTaskCollection
-        //{
-        //    get { return _favTaskCollection; }
-        //    set
-        //    {
-        //        if (_favTaskCollection != value)
-        //        {
-        //            _favTaskCollection = value;
-        //            OnPropertyChanged(nameof(FavTaskCollection));
-        //        }
-        //    }
-        //}
-
-        //private IList<SingleTask> _tomorrowTaskCollection;
-        //public IList<SingleTask> TomorrowTaskCollection
-        //{
-        //    get { return _tomorrowTaskCollection; }
-        //    set
-        //    {
-        //        if (_tomorrowTaskCollection != value)
-        //        {
-        //            _tomorrowTaskCollection = value;
-        //            OnPropertyChanged(nameof(TomorrowTaskCollection));
-        //        }
-        //    }
-        //}
 
         private string _day;
         public string Day
@@ -150,6 +122,14 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
             }
         }
 
+        private void MarkTaskFav(object parameter)
+        {
+            if(parameter != null && parameter is SingleTask singleTask)
+            {
+                singleTask.IsFav = !singleTask.IsFav;
+            }
+        }
+
         public void GetTaskCollection()
         {
             try
@@ -189,6 +169,19 @@ namespace TimeBoxingCross.HorizontalListView.ViewModel
                 return _removeTaskCommand;
             }
         }
+
+        private DelegateCommand _markTaskFavCommand;
+
+        public DelegateCommand MarkTaskFavCommand
+        {
+            get
+            {
+                if (_markTaskFavCommand == null)
+                    _markTaskFavCommand = new DelegateCommand((parameter) => { MarkTaskFav(parameter); });
+                return _markTaskFavCommand;
+            }
+        }
+
 
         #endregion
 
